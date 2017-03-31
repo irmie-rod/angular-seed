@@ -1,0 +1,78 @@
+.header {
+  text-align: center;
+  background: #074E68;
+  background-size: cover;
+  box-shadow: 0 1px 8px #333;
+  height: 12.06rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  overflow: visible;
+  padding-top: 2.5rem;
+  padding-bottom: 4.9rem;
+  z-index: 100;
+
+  -webkit-transition: height 1s;
+  -moz-transition: height 1s;
+  -ms-transition: height 1s;
+  -o-transition: height 1s;
+  transition: height 1s;
+}
+  .header .headline {
+    color: #ffe; }
+
+  .header.-is--minimized{
+    text-align: left;
+    height: 3.125rem;
+  }
+
+  .header.-is--minimized .header-subnav {
+    text-align: right;
+    top: 0;
+  }
+
+.header-subnav {
+  float: none;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  bottom: 0;
+  width: 100%; }
+  .header-subnav li {
+    float: none;
+    display: inline-block; }
+    .header-subnav li a {
+      padding: 0.9rem 1rem;
+      font-size: 0.75rem;
+      color: #ffe;
+      text-transform: uppercase;
+      display: block;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: all 0.35s ease-in-out; }
+      .header-subnav li a.is-active {
+        background: rgba(250, 250, 250, 0.15); }
+      .header-subnav li a:hover {
+        background: rgba(250, 250, 250, 0.15);
+        transition: all 0.35s ease-in-out; }
+
+
+.main-container {
+  position: absolute;
+  left: 0;
+  top: 12.06rem;
+  right: 0;
+  z-index: 99;
+}
+
+.main-container.-header--minimized {
+  top: 3.125rem;
+}
+
+.city-background {
+  background-image: url("../assets/images/home.jpg");
+  background-size: cover;
+  height: 20rem;
+}
